@@ -1,0 +1,87 @@
+  <!DOCTYPE html>
+<html>
+<head>
+
+    <title>Youcode Quiz</title>
+    <link href ="style.css" rel ="stylesheet">
+    <script src = "mainjs.js"></script>
+
+</head>
+
+<body>
+        <h1>Quiz</h1>
+
+
+    <form id = "quiz" name = "quiz">
+
+
+        <!-- question1 -->
+        <p class = "questions">Quelle est la propriété qui change le marging left d'un element ?</p>
+            <input type = "radio" id = "mc" name = "question1" value = "padding-left">padding-left<br>
+            <input type = "radio" id = "mc" name = "question1" value = "margin-left">margin-left<br>
+            <input type = "radio" id = "mc" name = "question1" value = "indent">indent<br>
+            <input type = "radio" id = "mc" name = "question1" value = "strong">strong<br>
+
+        <!-- question2 -->
+        <p class = "questions">Quel mot-clé ne permet pas de déclarer une variable en JavaScript ?</p>
+            <input type = "radio" id = "mc" name = "question2" value = "Const">Const<br>
+            <input type = "radio" id = "mc" name = "question2" value = "Switch">Switch<br>
+            <input type = "radio" id = "mc" name = "question2" value = "Let">Let<br>
+            <input type = "radio" id = "mc" name = "question2" value = "Var">Var<br>
+
+        <!-- question3 -->
+        <p class = "questions">Parmi les propositions suivantes, laquelle n'est pas un type de base du langage javascript ?</p>
+            <input type = "radio" id = "mc" name = "question3" value = "Nombre">Nombre<br>
+            <input type = "radio" id = "mc" name = "question3" value = "Entier">Entier<br>
+            <input type = "radio" id = "mc" name = "question3" value = "chaine">Chaine<br>
+            <input type = "radio" id = "mc" name = "question3" value = "Booléen">Booléen<br>
+
+        <!-- question4 -->
+        <p class = "questions">Combien de fois le message “J’ai soif !”  sera-t-il répété avec le programme suivant ?>
+            <pre>   
+                let i = 0;
+
+                while (i <= 4) {
+
+                console.log("J'ai soif !");
+
+                i++;
+            </pre>
+        </p>
+
+            <input type = "radio" id = "mc" name = "question4" value = "1 fois">1 fois<br>
+            <input type = "radio" id = "mc" name = "question4" value = "4 fois">4 fois<br>
+            <input type = "radio" id = "mc" name = "question4" value = "5 fois">5 fois<br>
+            <input type = "radio" id = "mc" name = "question4" value = "Une infinité de fois">Une infinité de fois<br>
+
+        <!-- question5 -->
+        <p class = "questions"> Que signifie CSS ?</p>
+            <input type = "radio" id = "mc" name = "question5" value = "Cascading Style Sheets">Cascading Style Sheets<br>
+            <input type = "radio" id = "mc" name = "question5" value = "Create Simple Samples">Create Simple Samples<br>
+            <input type = "radio" id = "mc" name = "question5" value = "cacahuète et saucisse de foie">cacahuète et saucisse de savoie<br>
+            <input type = "radio" id = "mc" name = "question5" value = "Create Simple styles">Create Simple styles<br>
+
+        <!-- question6 -->
+        <p class = "questions">Comment déclarer une fonction en JavaScript?</p>
+
+            <input type = "radio" id = "mc" name = "question6" value ="function: myFunction()">function: myFunction()<br>
+            <input type = "radio" id = "mc" name = "question6" value = "function = myFunction()">function = myFunction()<br>
+            <input type = "radio" id = "mc" name = "question6" value = "function myFunction()">function myFunction()<br>
+            <input type = "radio" id = "mc" name = "question6" value = "myFunction = myFunction()">myFunction = myFunction()<br>
+
+
+
+            <!-- button to click after finishing the quiz -->
+
+            <button id = "button" type = "button" value = "I'm finished!" onclick = "check()">Submit</button>
+
+    </form>
+
+        <div id = "after_submit">
+            <p id = "number_correct"></p>
+            <p id = "message"></p>
+            <img id = "picture">
+        </div>
+</html>
+
+</body>
